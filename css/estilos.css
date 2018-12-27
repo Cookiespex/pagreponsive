@@ -1,0 +1,110 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+body{
+	background: url(../img/back.jpg) no-repeat;
+	background-repeat: top center;
+	height: 1920px;
+}
+/*=============================================
+CABEZOTE
+=============================================*/
+#dron{
+	position: relative;
+	margin: auto;
+	width: 1920px;
+	height: 150px;
+	background: rgba(0,0,255,.5);
+}
+#dron header{
+	position: absolute;
+	top: 53px;
+	left: 299px;
+	width: 178px;
+	height: 24px;
+/*	padding: 50px;*/
+}
+/*=============================================
+BARRA DE NAVEGACION
+=============================================*/
+#dron nav{
+	position: absolute;
+	top: 50px;
+	left: 1020px;
+	width: 630px;
+	height: 50px;
+	background: rgba(255,0,255,.5);
+}
+/*=============================================
+SLIDE
+=============================================*/
+#slide{
+	position: relative;
+	margin: auto;
+	width: 1920px;
+	height: 930px;
+	background: rgba(0,255,0,.5);
+}
+/*=============================================
+ASK
+=============================================*/
+#ask{
+	position: relative;
+	margin: auto;
+	width: 1920px;
+	height: 600px;
+	background: rgba(0,0,255,.5);
+}
+/*=============================================
+SECCION
+=============================================*/
+section{
+	position: relative;
+	margin: auto;
+	width: 1920px;
+	height: 686px;
+	background: rgba(255,300,0,.5);
+}
+/*=============================================
+FOTOS
+=============================================*/
+#fotos{
+	position: relative;
+	margin: auto;
+	width: 1920px;
+	height: 1285px;
+	background: rgba(300,0,0,.5);
+}
+/*=============================================
+BOTTOM
+=============================================*/
+#bottom{
+	position: relative;
+	margin: auto;
+	width: 1920px;
+	height: 489px;
+	background: rgba(0,255,300,.5);
+}
+/*=============================================
+MAPA
+=============================================*/
+#mapa{
+	position: relative;
+	margin: auto;
+	width: 1920px;
+	height: 603px;
+	background: rgba(0,155,0,.5);
+}
+/*=============================================
+FOOTER
+=============================================*/
+footer{
+	position: relative;
+	margin: auto;
+	width: 1920px;
+	height: 396px;
+	background: rgba(255,155,155,.5);
+}
