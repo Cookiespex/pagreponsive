@@ -3,6 +3,7 @@
 	padding: 0;
 	text-decoration: none;
 	list-style: none;
+	font-family: 'Montserrat', sans-serif;
 }
 body{
 	background: url(../img/back.jpg) no-repeat;
@@ -34,9 +35,17 @@ BARRA DE NAVEGACION
 	position: absolute;
 	top: 50px;
 	left: 1020px;
-	width: 630px;
+	width: 632px;
 	height: 50px;
 	background: rgba(255,0,255,.5);
+}
+#dron nav ul#va li{
+	float: left;
+	color: white;
+	margin-right: 32px;
+	line-height: 50px;
+	font-size: 16px;
+	overflow: hidden;
 }
 /*=============================================
 SLIDE
@@ -48,6 +57,45 @@ SLIDE
 	height: 930px;
 	background: rgba(0,255,0,.5);
 }
+#slide article{
+	position: relative;
+	top: 140px;
+	left: 610px;
+	width: 725px;
+	height: 265px;
+	color: white;
+	text-align: center;
+}
+#slide article h1{font-size: 46px;}
+#slide article p{
+	position: relative;
+	top: 12px;
+	font-size: 17px;
+}
+.boton{
+	border-radius: 50px;
+	width: 206px;
+	height: 51px;
+	border:1px solid white;
+	background: #415da6;
+	font-size: 16px;
+	color: #ffffff;
+}
+#tho{
+	position: relative;
+	top: 85px;
+	left: -23px;
+	background: #ffffff;
+	color: #d32721;
+}
+#tha{
+	position: relative;
+	top: 85px;
+	left: -7px;
+	width: 190px;
+	background: transparent;
+	color: #ffffff;
+}
 /*=============================================
 ASK
 =============================================*/
@@ -57,6 +105,37 @@ ASK
 	width: 1920px;
 	height: 600px;
 	background: rgba(0,0,255,.5);
+}
+#ask ul{
+	position: relative;
+	top: 114px;
+	left: 296px;
+	width: 1325px;
+	height: 265px;
+}
+#ask ul li{
+	float: left;
+	width: 240px;
+	height: 265px;
+	text-align: center;
+	margin: 0px 45px;
+}
+#ask ul li h1{
+	font-size: 30px;
+ 	background: linear-gradient(to bottom right, red, yellow);
+  	-webkit-background-clip: text;  
+ 	-webkit-text-fill-color: transparent; 
+}
+#ask ul li p{
+	font-size: 15px;
+}
+#ask button{
+	position: relative;
+	top: 186px;
+	left: 856px;
+	border-radius: 50px;
+	width: 206px;
+	height: 51px;
 }
 /*=============================================
 SECCION
@@ -68,6 +147,66 @@ section{
 	height: 686px;
 	background: rgba(255,300,0,.5);
 }
+section article{
+	position: relative;
+	top: 110px;
+	left: 300px;
+	width: 900px;
+	height: 145px;
+}
+section article h1{
+	background: linear-gradient(to bottom right, red, yellow);
+  	-webkit-background-clip: text;  
+ 	-webkit-text-fill-color: transparent;  
+ 	font-size: 43px;
+ }
+section article p{font-size: 18px;}
+section ol{
+	position: relative;
+	top: 152px;
+	left: 296px;
+	width: 900px;
+	height: 345px;
+}
+.dcha{
+	position: relative;
+	text-align: justify;
+	font-size: 13px;
+	width: 358px;
+	height: 63px;
+	left: 80px;
+}
+.iza{
+	position: relative;
+	text-align: justify;
+	font-size: 13px;
+	width: 160px;
+	height: 63px;
+	top: -279px;
+	left: 584px;
+}
+.izda{
+	position: relative;
+	text-align: justify;
+	font-size: 13px;
+	width: 280px;
+	height: 40px;
+	top: -222px;
+	left: 584px;
+}
+.numeros{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	text-align: center;
+	background: white;
+	line-height: 50px;
+}
+#n2{top: 111px;}
+#n3{top: 218px;}
+#n4{top: 0px; left: 503px;}
+#n5{top: 111px; left: 503px;}
 /*=============================================
 FOTOS
 =============================================*/
@@ -75,8 +214,41 @@ FOTOS
 	position: relative;
 	margin: auto;
 	width: 1920px;
-	height: 1285px;
+	height: 1286px;
 	background: rgba(300,0,0,.5);
+}
+#fotos ul{
+	position: relative;
+	width: 1920px;
+	height: 1286px;
+}
+#fotos ul li:first-child{
+	position: absolute;
+	width: 959px;
+	height: 641px;
+}
+#fotos ul li:nth-child(2){
+	position: absolute;
+	top: 168px;
+	left: 1034px;
+	width: 565px;
+	height: 280px;
+}
+.tex{
+	position: relative;
+	width: 565px;
+	height: 280px;
+}
+.ti{
+	background: linear-gradient(to bottom right, red, yellow);
+  	-webkit-background-clip: text;  
+ 	-webkit-text-fill-color: transparent;  
+ 	font-size: 43px;
+ }
+.paf{font-size: 15px;}
+.boton{
+	position: relative;
+	top: 94px;
 }
 /*=============================================
 BOTTOM
@@ -87,6 +259,42 @@ BOTTOM
 	width: 1920px;
 	height: 489px;
 	background: rgba(0,255,300,.5);
+}
+#bottom article{
+	position: relative;
+	top: 145px;
+	left: 655px;
+	width: 650px;
+	height: 175px;
+	text-align: center;
+	font-size: 33px;
+	color: white;
+}
+#bottom article form{
+	position: relative;
+	width: 393px;
+	height: 52px;
+	top: 45px;
+	left: 106px;
+}
+#bottom article form input#email{
+	position: absolute;
+	left: 0px;
+	width: 393px;
+	height: 49px;
+	color: #ffffff;
+	border-radius: 50px;
+	border: 1px solid white;
+	background: transparent;
+}
+#bottom article form input#enviar{
+	position: absolute;
+	left: 260px;
+	width: 135px;
+	height: 51px;
+	border-radius: 50px;
+	border: 1px solid white;
+	background: #ffffff;
 }
 /*=============================================
 MAPA
@@ -107,4 +315,13 @@ footer{
 	width: 1920px;
 	height: 396px;
 	background: rgba(255,155,155,.5);
+}
+footer article{
+	position: relative;
+	top: 65px;
+	left: 600px;
+	width: 705px;
+	height: 80px;
+	color: #b3b8c5;
+	text-align: center;
 }
