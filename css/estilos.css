@@ -39,7 +39,7 @@ BARRA DE NAVEGACION
 	height: 50px;
 	background: rgba(255,0,255,.5);
 }
-#dron nav ul#va li{
+.go{
 	float: left;
 	color: white;
 	margin-right: 32px;
@@ -231,8 +231,18 @@ FOTOS
 	position: absolute;
 	top: 168px;
 	left: 1034px;
-	width: 565px;
-	height: 280px;
+}
+#fotos ul li:nth-child(3){
+	position: absolute;
+	top: 643px;
+	left: 959px;
+	width: 959px;
+	height: 641px;
+}
+#fotos ul li:last-child{
+	position: absolute;
+	top: 802px;
+	left: 298px;
 }
 .tex{
 	position: relative;
