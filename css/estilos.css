@@ -5,11 +5,11 @@
 	list-style: none;
 	font-family: 'Montserrat', sans-serif;
 }
-body{
+/*body{
 	background: url(../img/back.jpg) no-repeat;
 	background-repeat: top center;
 	height: 1920px;
-}
+}*/
 /*=============================================
 CABEZOTE
 =============================================*/
@@ -17,8 +17,8 @@ CABEZOTE
 	position: relative;
 	margin: auto;
 	width: 1920px;
-	height: 150px;
-	background: rgba(0,0,255,.5);
+	height: 1080px;
+	background: url(../img/bnav.png);
 }
 #dron header{
 	position: absolute;
@@ -26,7 +26,6 @@ CABEZOTE
 	left: 299px;
 	width: 178px;
 	height: 24px;
-/*	padding: 50px;*/
 }
 /*=============================================
 BARRA DE NAVEGACION
@@ -37,7 +36,6 @@ BARRA DE NAVEGACION
 	left: 1020px;
 	width: 632px;
 	height: 50px;
-	background: rgba(255,0,255,.5);
 }
 .go{
 	float: left;
@@ -50,14 +48,14 @@ BARRA DE NAVEGACION
 /*=============================================
 SLIDE
 =============================================*/
-#slide{
-	position: relative;
+#dron #slide{
+	position: absolute;
 	margin: auto;
+	top: 150px;
 	width: 1920px;
 	height: 930px;
-	background: rgba(0,255,0,.5);
 }
-#slide article{
+#dron #slide article{
 	position: relative;
 	top: 140px;
 	left: 610px;
@@ -66,8 +64,8 @@ SLIDE
 	color: white;
 	text-align: center;
 }
-#slide article h1{font-size: 46px;}
-#slide article p{
+#dron #slide article h1{font-size: 46px;}
+#dron #slide article p{
 	position: relative;
 	top: 12px;
 	font-size: 17px;
@@ -104,7 +102,12 @@ ASK
 	margin: auto;
 	width: 1920px;
 	height: 600px;
-	background: rgba(0,0,255,.5);
+	background: #f6f6f6;
+}
+.grra{
+	background: linear-gradient(to bottom right, red, yellow);
+  	-webkit-background-clip: text;  
+ 	-webkit-text-fill-color: transparent; 
 }
 #ask ul{
 	position: relative;
@@ -120,12 +123,7 @@ ASK
 	text-align: center;
 	margin: 0px 45px;
 }
-#ask ul li h1{
-	font-size: 30px;
- 	background: linear-gradient(to bottom right, red, yellow);
-  	-webkit-background-clip: text;  
- 	-webkit-text-fill-color: transparent; 
-}
+#ask ul li h1{font-size: 30px;}
 #ask ul li p{
 	font-size: 15px;
 }
@@ -145,7 +143,7 @@ section{
 	margin: auto;
 	width: 1920px;
 	height: 686px;
-	background: rgba(255,300,0,.5);
+	background: url(../img/bask.png);
 }
 section article{
 	position: relative;
@@ -154,12 +152,7 @@ section article{
 	width: 900px;
 	height: 145px;
 }
-section article h1{
-	background: linear-gradient(to bottom right, red, yellow);
-  	-webkit-background-clip: text;  
- 	-webkit-text-fill-color: transparent;  
- 	font-size: 43px;
- }
+section article h1{font-size: 43px;}
 section article p{font-size: 18px;}
 section ol{
 	position: relative;
@@ -198,6 +191,9 @@ section ol{
 	position: absolute;
 	width: 50px;
 	height: 50px;
+	border: 1px solid #c7cde0;
+	color: #3f4e76;
+	font-weight: 900;
 	border-radius: 100%;
 	text-align: center;
 	background: white;
@@ -215,7 +211,7 @@ FOTOS
 	margin: auto;
 	width: 1920px;
 	height: 1286px;
-	background: rgba(300,0,0,.5);
+	background: #f6f6f6;
 }
 #fotos ul{
 	position: relative;
@@ -224,6 +220,7 @@ FOTOS
 }
 #fotos ul li:first-child{
 	position: absolute;
+	top: 2px;
 	width: 959px;
 	height: 641px;
 }
@@ -234,7 +231,7 @@ FOTOS
 }
 #fotos ul li:nth-child(3){
 	position: absolute;
-	top: 643px;
+	top: 645px;
 	left: 959px;
 	width: 959px;
 	height: 641px;
@@ -244,17 +241,12 @@ FOTOS
 	top: 802px;
 	left: 298px;
 }
+#fotos ul li article h1{font-size: 43px;}
 .tex{
 	position: relative;
 	width: 565px;
 	height: 280px;
 }
-.ti{
-	background: linear-gradient(to bottom right, red, yellow);
-  	-webkit-background-clip: text;  
- 	-webkit-text-fill-color: transparent;  
- 	font-size: 43px;
- }
 .paf{font-size: 15px;}
 .boton{
 	position: relative;
@@ -268,7 +260,7 @@ BOTTOM
 	margin: auto;
 	width: 1920px;
 	height: 489px;
-	background: rgba(0,255,300,.5);
+	background: url(../img/bbom.png);
 }
 #bottom article{
 	position: relative;
@@ -292,7 +284,6 @@ BOTTOM
 	left: 0px;
 	width: 393px;
 	height: 49px;
-	color: #ffffff;
 	border-radius: 50px;
 	border: 1px solid white;
 	background: transparent;
@@ -314,7 +305,6 @@ MAPA
 	margin: auto;
 	width: 1920px;
 	height: 603px;
-	background: rgba(0,155,0,.5);
 }
 /*=============================================
 FOOTER
@@ -324,7 +314,7 @@ footer{
 	margin: auto;
 	width: 1920px;
 	height: 396px;
-	background: rgba(255,155,155,.5);
+	background: #ffffff;
 }
 footer article{
 	position: relative;
