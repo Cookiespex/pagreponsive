@@ -8,84 +8,98 @@
 	<meta name="keywords" content="dron, drones, ciudad, drones en ciudad">
 	<title>DroneZone</title>
 	<link rel="stylesheet" type="text/css" href="css/estilos.css" media="">
+	<link rel="stylesheet" href="css/fontello.css">
 	<link rel="icon" href="img/log.jpg">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<style>img{ max-width: 100%;}</style>
 </head>
 <body>
-	<!--HEADER-->
-	<div id="dron">
-		<header>
-			<a href="index.html"><img src="img/logo.png" width="100%" alt="logo DroneZone"></a>
-		</header>
+	<div class="contenedor">
+		<!--SLIDE-->
+		<div id="slide" class="fila">
+		<!--HEADER-->
+		<header class="fila">
+			<div id="logo"><a href="index.html"><img src="img/logo.png" width="100%" alt="logo DroneZone"></a></div>
 		<!--FIN HEADER-->
 		<!--BARRA NAVEGACION-->
-		<nav>
-			<ul id="va">
-				<a href="index.html"><li class="go">Home</li></a>
-				<a href="#ask"><li class="go">About</li></a>
-				<a href="#slide"><li class="go">Pricing</li></a>
-				<a href="#ourdr"><li class="go">Our drones</li></a>
-				<a href="#fotos"><li class="go">Our realizations</li></a>
-				<a href="#bottom"><li class="go">Contact</li></a>
-			</ul>
+		<input type="checkbox" id="menu-bar">
+		<label class="icon-menu" for="menu-bar"></label>
+		<nav class="menu">
+			<a href="index.html">Home</a>
+			<a href="#ask">About</a>
+			<a href="#slide">Pricing</a>
+			<a href="#ourdr">Our drones</a>
+			<a href="#fotos">Our realizations</a>
+			<a href="#bottom">Contact</a>
 		</nav>
+		</header>
 		<!--FIN BARRA NAVEGACION-->
-		<!--SLIDE-->
-		<div id="slide">
-			<article>
-				<h1>Film your event with us!</h1>
-				<p>Pellentesque eget nunc sit amet urna ullamcorper fermentum et au leo. <br> Nunc vel nibh tempor, pharetra lectus congue, luctus orci.</p>
+			<article class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h1>Film your event with us!</h1><br><br>
+				<p>Pellentesque eget nunc sit amet urna ullamcorper fermentum et au leo. <br> Nunc vel nibh tempor, pharetra lectus congue, luctus orci.</p><br><br><br><br>
 				<a href="index.html"><button class="boton" id="tho">Ask for price</button></a>
-				<a href="index.html"><button class="boton" id="tha"><img src="img/fle.png">   Watch video</button></a>
+				<a href="index.html"><button class="boton" id="tha">Watch video</button></a>
 			</article>
 		</div>
-	</div>
 	<!--FIN SLIDE-->
-	<!--ASK-->
-	<div id="ask">
-		<ul>
-			<li>
+	<!--SECCION1-->
+	<section id="section1" class="fila">
+		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<center>
 				<img src="img/ic1.png">
 				<h1 class="grra">From air </h1><br>
 				<p>Pellentesque eget nunc sit amet urna ullamcorper fermen-tum et eu leo.</p>
-			</li>
-			<li>
+			</center>
+		</div>
+		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<center>
 				<img src="img/ic2.png">
 				<h1 class="grra">Best drones </h1><br>
 				<p>Pellentesque eget nunc sit amet urna ullamcorper fermen-tum et eu leo. </p>
-			</li>
-			<li>
+			</center>
+		</div>
+		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<center>
 				<img src="img/ic3.png">
 				<h1 class="grra">Speed</h1><br>
 				<p>Pellentesque eget nunc sit amet urna ullamcorper fermen-tum et eu leo. </p>
-			</li>
-			<li>
+			</center>
+		</div>
+		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<center>
 				<img src="img/ic4.png">
 				<h1 class="grra">Long range</h1><br>
 				<p>Pellentesque eget nunc sit amet urna ullamcorper fermen-tum et eu leo. </p>
-			</li>
-		</ul>
-		<a href="index.html"><button class="boton">Ask for price</button></a>
-	</div>
-	<!--FIN ASK-->
-	<!--SECCION-->
-	<section>
-		<article>
+			</center>
+		</div>
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<center>
+				<a href="index.html">
+				<button class="boton">Ask for price</button>
+				</a>
+			</center>
+		</div>
+	</section>
+	<!--FIN SECCION1-->
+	<!--SECCION2-->
+	<section id="section2" class="fila">
+		<article class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 			<h1 class="grra">Nature from the air </h1><br>
 			<p>Mauris consequat libero metus, nec ultricies sem efficitur quis. Integer bibendum eget metus 
 			cumsan. Integer sit amet lacus egestas, semper est quis, viverra ex. </p><br><br>
 		</article>
-		<ol>
-			<div id="n1" class="numeros">1</div><li class="dcha">Pellentesque eget nunc slt amet urna ullamcorper fermentum et eu leo. Nunc vel nlbh tempo, pharetra lectus congue. Pellentesque eget nunc s et eu leo. Nunc vel nlbh t luctus orcl. luctus orcl.</li><br><br><br>
-			<div id="n2" class="numeros">2</div><li class="dcha">Maurls consequat Ilbero metus. nec ultrIcles sem efficltur quls. Integer blbendum eget metus ac accumsan. </li><br><br>
-			<div id="n3" class="numeros">3</div><li class="dcha">Integer slt amet lacus egestas. semper est quls, viverra ex. Maurls consequat Ilbero metus. nec ultrIcles sem efficltur quls.</li>
-			<div id="n4" class="numeros">4</div><li class="iza">Pellentesque eget nunc s et eu leo. Nunc vel nibh t luctus orci</li>
-			<div id="n5" class="numeros">5</div><li class="izda">Mauris consequat libero i quis. Integer bibendum eget metus ac accurr</li>
+		<ol class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><li>1 Pellentesque eget nunc slt amet urna ullamcorper fermentum et eu leo. Nunc vel nlbh tempo, pharetra lectus congue. Pellentesque eget nunc s et eu leo. Nunc vel nlbh t luctus orcl. luctus orcl.</li></div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><li>2 Maurls consequat Ilbero metus. nec ultrIcles sem efficltur quls. Integer blbendum eget metus ac accumsan. </li></div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><li>3 Integer slt amet lacus egestas. semper est quls, viverra ex. Maurls consequat Ilbero metus. nec ultrIcles sem efficltur quls.</li></div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><li>4 Pellentesque eget nunc s et eu leo. Nunc vel nibh t luctus orci</li></div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><li>5 Mauris consequat libero i quis. Integer bibendum eget metus ac accurr</li></div>
 		</ol>
 	</section>
-	<!--FIN SECCION-->
+	</div>
+	<!--FIN SECCION2-->
 	<!--FOTOS-->
-	<div id="fotos">
+	<!-- <div id="fotos" class="fila">
 		<ul>
 			<li><img src="img/fot1.png"></li>
 			<li><article class="tex">
@@ -100,27 +114,28 @@
 				<a href="index.html"><button class="boton">Ask for price</button></a>
 			</article></li>
 		</ul>
-	</div>
+	</div> -->
 	<!--FIN FOTOS-->
 	<!--BOTTOM-->
-	<div id="bottom">
+	<!-- <div id="bottom" class="fila">
 		<article>
 			<h1>Sign up for our newsletter</h1>
 			<form><input type="email" placeholder="     Email address" id="email"><input type="submit" id="enviar" value="Send"></form>
 		</article>
-	</div>
+	</div> -->
 	<!--FIN BOTTOM-->
 	<!--MAPA-->
-	<div id="mapa">
+	<!-- <div id="mapa" class="fila">
 		<iframe src="https://www.google.com/maps/embed?pb=" width="1920" height="603" frameborder="0" style="border:0" allowfullscreen></iframe>
-	</div>
+	</div> -->
 	<!--FIN MAPA-->
 	<!--FOOTER-->
-	<footer>
+	<!-- <footer class="fila">
 		<article>
 			<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. <br><br> Try awsome tool for desgners <a href="https://symu.co" target="_blank"><b>symu.co</b></a></p>
 		</article>
-	</footer>
+	</footer> -->
 	<!--FIN FOOTER-->
+	<!-- </div> -->
 </body>
 </html>

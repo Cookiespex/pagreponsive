@@ -4,73 +4,119 @@
 	text-decoration: none;
 	list-style: none;
 	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
 }
-/*body{
-	background: url(../img/back.jpg) no-repeat;
-	background-repeat: top center;
-	height: 1920px;
-}*/
+[class*="col-"]{
+	float: left;
+	padding: 20px;
+}
+.contenedor{
+	position: relative;
+	margin: auto;
+	width: 100%;
+	max-width: 1900px;
+	height: auto;
+}
+.fila{
+	position: relative;
+	margin: auto;
+	width: 100%;
+	height: auto;
+	clear: both;
+	display: table;
+}
+body{
+	/*background: url(../img/back.jpg) no-repeat;
+	background-repeat: top center;*/
+	width: 100%;
+	max-width: 1920px;
+	height: auto;
+}
 /*=============================================
 CABEZOTE
 =============================================*/
-#dron{
-	position: relative;
-	margin: auto;
-	width: 1920px;
+#slide{
+	width: 100%;
+	max-width: 1920px;
 	height: 1080px;
-	background: url(../img/bnav.png);
 }
-#dron header{
-	position: absolute;
-	top: 53px;
-	left: 299px;
-	width: 178px;
-	height: 24px;
+#slide header{
+	width: 100%;
+	max-width: 1920px;
+	height: auto;
+	color: #ffff;
+	display: table;
+}
+#slide header #logo{
+	float: left;
+	padding: 35px;
+}
+#slide header label{
+	float: right;
+	font-size: 30px;
+	margin: 30px 0;
+	color: white;
+	cursor: pointer;
 }
 /*=============================================
 BARRA DE NAVEGACION
 =============================================*/
-#dron nav{
+#menu-bar{display: none;}
+
+.menu{
 	position: absolute;
-	top: 50px;
-	left: 1020px;
-	width: 632px;
-	height: 50px;
+	top: 100px;
+	width: 100%;
+	max-width: 1920px;
+	height: 100vh;
+	background: transparent; 
+ 	transition: all 0.5s;
+ 	transform: translateX(-100%); 
 }
-.go{
-	float: left;
-	color: white;
-	margin-right: 32px;
+.menu a{
+	display: block;
+	padding: 15px;
 	line-height: 50px;
 	font-size: 16px;
 	overflow: hidden;
+	color: white;
+	border-bottom: 1px solid rgba(255,255,255,.3);
 }
+.menu a:hover{background: rgba(255,255,255,.3);}
+
+#menu-bar:checked ~ .menu{transform: translateX(0%);}
+
+#slide nav{padding: 10px;}
 /*=============================================
 SLIDE
 =============================================*/
-#dron #slide{
-	position: absolute;
-	margin: auto;
-	top: 150px;
-	width: 1920px;
-	height: 930px;
-}
-#dron #slide article{
-	position: relative;
-	top: 140px;
-	left: 610px;
-	width: 725px;
-	height: 265px;
+#slide article{
+	height: 430px;
 	color: white;
 	text-align: center;
+	margin-top: 100px;
 }
-#dron #slide article h1{font-size: 46px;}
-#dron #slide article p{
-	position: relative;
-	top: 12px;
-	font-size: 17px;
+#slide article h1{font-size: 46px;}
+
+#slide article p{font-size: 17px;}
+
+#slide article a{padding: 10px;}
+
+#tho{
+	top: 0;
+	left: 0;
+	background: #ffffff;
+	color: #d32721;
+}
+#tha{
+	top: 0;
+	left: 5px;
+	width: 190px;
+	background: transparent;
+	color: #ffffff;
 }
 .boton{
+	margin-top: 10px;
 	border-radius: 50px;
 	width: 206px;
 	height: 51px;
@@ -79,130 +125,46 @@ SLIDE
 	font-size: 16px;
 	color: #ffffff;
 }
-#tho{
-	position: relative;
-	top: 85px;
-	left: -23px;
-	background: #ffffff;
-	color: #d32721;
-}
-#tha{
-	position: relative;
-	top: 85px;
-	left: -7px;
-	width: 190px;
-	background: transparent;
-	color: #ffffff;
-}
 /*=============================================
-ASK
+SECCION1
 =============================================*/
-#ask{
-	position: relative;
-	margin: auto;
-	width: 1920px;
+#section1{
+	max-width: 1920px;
 	height: 600px;
 	background: #f6f6f6;
 }
+#section1 center{
+	padding: 80px 20px;
+}
+#section1 center h1{font-size: 30px;}
+
+#section1 center p{font-size: 15px;}
+
+#section1 center button{top: 0;}
 .grra{
 	background: linear-gradient(to bottom right, red, yellow);
   	-webkit-background-clip: text;  
  	-webkit-text-fill-color: transparent; 
 }
-#ask ul{
-	position: relative;
-	top: 114px;
-	left: 296px;
-	width: 1325px;
-	height: 265px;
-}
-#ask ul li{
-	float: left;
-	width: 240px;
-	height: 265px;
-	text-align: center;
-	margin: 0px 45px;
-}
-#ask ul li h1{font-size: 30px;}
-#ask ul li p{
-	font-size: 15px;
-}
-#ask button{
-	position: relative;
-	top: 186px;
-	left: 856px;
-	border-radius: 50px;
-	width: 206px;
-	height: 51px;
-}
 /*=============================================
-SECCION
+SECCION2
 =============================================*/
-section{
-	position: relative;
-	margin: auto;
-	width: 1920px;
+#section2{
+	width: 100%;
+	max-width: 1920px;
 	height: 686px;
-	background: url(../img/bask.png);
 }
-section article{
-	position: relative;
-	top: 110px;
-	left: 300px;
-	width: 900px;
-	height: 145px;
+#section2 article{
+	text-align: justify;
 }
-section article h1{font-size: 43px;}
-section article p{font-size: 18px;}
-section ol{
-	position: relative;
-	top: 152px;
-	left: 296px;
-	width: 900px;
+#section2 article h1{font-size: 43px;}
+
+#section2 article p{font-size: 18px;}
+#section2 ol{
+	width: 100%;
+	max-width: 900px;
 	height: 345px;
 }
-.dcha{
-	position: relative;
-	text-align: justify;
-	font-size: 13px;
-	width: 358px;
-	height: 63px;
-	left: 80px;
-}
-.iza{
-	position: relative;
-	text-align: justify;
-	font-size: 13px;
-	width: 160px;
-	height: 63px;
-	top: -279px;
-	left: 584px;
-}
-.izda{
-	position: relative;
-	text-align: justify;
-	font-size: 13px;
-	width: 280px;
-	height: 40px;
-	top: -222px;
-	left: 584px;
-}
-.numeros{
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	border: 1px solid #c7cde0;
-	color: #3f4e76;
-	font-weight: 900;
-	border-radius: 100%;
-	text-align: center;
-	background: white;
-	line-height: 50px;
-}
-#n2{top: 111px;}
-#n3{top: 218px;}
-#n4{top: 0px; left: 503px;}
-#n5{top: 111px; left: 503px;}
 /*=============================================
 FOTOS
 =============================================*/
@@ -292,7 +254,7 @@ BOTTOM
 	position: absolute;
 	left: 260px;
 	width: 135px;
-	height: 51px;
+	height: 49px;
 	border-radius: 50px;
 	border: 1px solid white;
 	background: #ffffff;
@@ -324,4 +286,150 @@ footer article{
 	height: 80px;
 	color: #b3b8c5;
 	text-align: center;
+}
+/*=============================================
+PANTALLA DE ESCRITORIO LARGE (lg)         
+=============================================*/
+@media (min-width:1200px){
+	.col-lg-12{width: 100%;}
+	.col-lg-11{width: 91.66666667%;}
+	.col-lg-{width: 83.33333333%;}
+	.col-lg-9{width: 75%;}
+	.col-lg-8{width: 66.66666667%;}
+	.col-lg-7{width: 58.33333333%;}
+	.col-lg-6{width: 50%;}
+	.col-lg-5{width: 41.66666667%;}
+	.col-lg-4{width: 33.33333333%;}
+	.col-lg-3{width: 25%;}
+	.col-lg-2{width: 16.66666667%;}
+	.col-lg-1{width: 8.33333333%;}
+	.col-lg-0{display: none;}
+
+	#slide{
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-image: url(../img/bnav.png);}
+	.menu{
+		position: static;
+		width: auto;
+		height: auto;
+		transform: translateX(0%);
+		float: right;
+		display: flex;}
+	.menu a{border: none;}
+	#slide header label{display: none;}
+	#section2{
+		padding-top: 100px;
+		padding-left: 300px;
+	}
+	/*section{
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-image: url(../img/bask.png);
+	}*/
+}
+/*=============================================
+PANTALLA DE ESCRITORIO MED (md)         
+=============================================*/
+@media(max-width: 1199px) and (min-width:992px ){
+	.col-md-12{width: 100%;}
+	.col-md-11{width: 91.66666667%;}
+	.col-md-{width: 83.33333333%;}
+	.col-md-9{width: 75%;}
+	.col-md-8{width: 66.66666667%;}
+	.col-md-7{width: 58.33333333%;}
+	.col-md-6{width: 50%;}
+	.col-md-5{width: 41.66666667%;}
+	.col-md-4{width: 33.33333333%;}
+	.col-md-3{width: 25%;}
+	.col-md-2{width: 16.66666667%;}
+	.col-md-1{width: 8.33333333%;}
+	.col-md-0{display: none;}
+
+	#slide{
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-image: url(../img/bnav.png);}
+	.menu{
+		position: static;
+		width: auto;
+		height: auto;
+		transform: translateX(0%);
+		float: right;
+		display: flex;}
+	.menu a{border: none;}
+	#slide header label{display: none;}
+	#section2{
+		padding-top: 100px;
+		padding-left: 300px;
+	}
+	/*section{
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-image: url(../img/bask.png);
+	}*/
+}	
+/*=============================================
+PANTALLA DE ESCRITORIO SMALL (sm)        
+=============================================*/
+@media(max-width: 991px) and (min-width:768px ){
+	.col-sm-12{width: 100%;}
+	.col-sm-11{width: 91.66666667%;}
+	.col-sm-{width: 83.33333333%;}
+	.col-sm-9{width: 75%;}
+	.col-sm-8{width: 66.66666667%;}
+	.col-sm-7{width: 58.33333333%;}
+	.col-sm-6{width: 50%;}
+	.col-sm-5{width: 41.66666667%;}
+	.col-sm-4{width: 33.33333333%;}
+	.col-sm-3{width: 25%;}
+	.col-sm-2{width: 16.66666667%;}
+	.col-sm-1{width: 8.33333333%;}
+	.col-sm-0{display: none;}
+
+	#slide{
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-image: url(../img/bnav.png);}
+	.menu{
+		background: rgba(155,0,0,.9);
+		z-index: 100;
+	}
+	#section2{
+		padding-top: 80px;
+		padding-left: 40px;
+	}
+}
+/*=============================================
+PANTALLA DE ESCRITORIO EXTRASMALL (xs)         
+=============================================*/
+@media(max-width: 767px){
+	.col-xs-12{width: 100%;}
+	.col-xs-11{width: 91.66666667%;}
+	.col-xs-{width: 83.33333333%;}
+	.col-xs-9{width: 75%;}
+	.col-xs-8{width: 66.66666667%;}
+	.col-xs-7{width: 58.33333333%;}
+	.col-xs-6{width: 50%;}
+	.col-xs-5{width: 41.66666667%;}
+	.col-xs-4{width: 33.33333333%;}
+	.col-xs-3{width: 25%;}
+	.col-xs-2{width: 16.66666667%;}
+	.col-xs-1{width: 8.33333333%;}
+	.col-xs-0{display: none;}
+
+	#slide{
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-image: url(../img/bnav.png);}
+	.menu{
+		background: rgba(155,0,0,.9);
+		z-index: 100;
+	}
 }
