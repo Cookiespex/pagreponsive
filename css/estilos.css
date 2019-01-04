@@ -14,7 +14,6 @@
 	position: relative;
 	margin: auto;
 	width: 100%;
-	max-width: 1900px;
 	height: auto;
 }
 .fila{
@@ -26,10 +25,7 @@
 	display: table;
 }
 body{
-	/*background: url(../img/back.jpg) no-repeat;
-	background-repeat: top center;*/
 	width: 100%;
-	max-width: 1920px;
 	height: auto;
 }
 /*=============================================
@@ -37,12 +33,10 @@ CABEZOTE
 =============================================*/
 #slide{
 	width: 100%;
-	max-width: 1920px;
 	height: 1080px;
 }
 #slide header{
 	width: 100%;
-	max-width: 1920px;
 	height: auto;
 	color: #ffff;
 	display: table;
@@ -67,7 +61,6 @@ BARRA DE NAVEGACION
 	position: absolute;
 	top: 100px;
 	width: 100%;
-	max-width: 1920px;
 	height: 100vh;
 	background: transparent; 
  	transition: all 0.5s;
@@ -101,7 +94,6 @@ SLIDE
 #slide article p{font-size: 17px;}
 
 #slide article a{padding: 10px;}
-
 #tho{
 	top: 0;
 	left: 0;
@@ -129,13 +121,11 @@ SLIDE
 SECCION1
 =============================================*/
 #section1{
-	max-width: 1920px;
 	height: 600px;
 	background: #f6f6f6;
 }
-#section1 center{
-	padding: 80px 20px;
-}
+#section1 center{padding: 80px 20px;}
+
 #section1 center h1{font-size: 30px;}
 
 #section1 center p{font-size: 15px;}
@@ -151,137 +141,99 @@ SECCION2
 =============================================*/
 #section2{
 	width: 100%;
-	max-width: 1920px;
-	height: 686px;
+	height: 100%;
+	min-height: 686px;
+	max-height: 1200px;
 }
 #section2 article{
+	padding: 10px 20px;
 	text-align: justify;
 }
 #section2 article h1{font-size: 43px;}
 
 #section2 article p{font-size: 18px;}
-#section2 ol{
+#section2 article ol{
 	width: 100%;
 	max-width: 900px;
 	height: 345px;
+	padding: 10px 30px;
+}
+#section2 article ol li{
+	padding: 15px 30px;
+	text-align: justify;
+	list-style-type: decimal;
 }
 /*=============================================
 FOTOS
 =============================================*/
 #fotos{
-	position: relative;
-	margin: auto;
-	width: 1920px;
-	height: 1286px;
+	padding: 2px;
+	height: 100%;
+	max-height: 1286px;
 	background: #f6f6f6;
 }
-#fotos ul{
-	position: relative;
-	width: 1920px;
-	height: 1286px;
+#fotos ul li{
+	width: 100%;
+	height: 100%;
+	padding: 5px;
 }
-#fotos ul li:first-child{
-	position: absolute;
-	top: 2px;
-	width: 959px;
-	height: 641px;
+#fotos ul li article{
+	width: 100%;
+	height: 100%;
+	max-width: 1920px;
 }
-#fotos ul li:nth-child(2){
-	position: absolute;
-	top: 168px;
-	left: 1034px;
+/*#fotos ul li:first-child{
+	float: left;
+	padding: 2px;
 }
+#fotos ul li:nth-child(2){float: right;}
 #fotos ul li:nth-child(3){
-	position: absolute;
-	top: 645px;
-	left: 959px;
-	width: 959px;
-	height: 641px;
+	float: right;
+	padding: 2px;
 }
-#fotos ul li:last-child{
-	position: absolute;
-	top: 802px;
-	left: 298px;
-}
+#fotos ul li:last-child{float: left;}*/
 #fotos ul li article h1{font-size: 43px;}
-.tex{
-	position: relative;
-	width: 565px;
-	height: 280px;
-}
-.paf{font-size: 15px;}
-.boton{
-	position: relative;
-	top: 94px;
+#fotos ul li article p{
+	text-align: justify;
+	font-size: 15px;
 }
 /*=============================================
 BOTTOM
 =============================================*/
-#bottom{
-	position: relative;
-	margin: auto;
-	width: 1920px;
+#battom{
 	height: 489px;
-	background: url(../img/bbom.png);
 }
-#bottom article{
-	position: relative;
-	top: 145px;
-	left: 655px;
-	width: 650px;
-	height: 175px;
+#battom form{
 	text-align: center;
-	font-size: 33px;
+	margin: auto;
+	margin-top: 150px;
+}
+#battom form h1{
+	width: 100%;
+	font-size: 45px;
 	color: white;
 }
-#bottom article form{
-	position: relative;
-	width: 393px;
-	height: 52px;
-	top: 45px;
-	left: 106px;
-}
-#bottom article form input#email{
-	position: absolute;
-	left: 0px;
-	width: 393px;
-	height: 49px;
+form input#email{
 	border-radius: 50px;
-	border: 1px solid white;
 	background: transparent;
-}
-#bottom article form input#enviar{
-	position: absolute;
-	left: 260px;
-	width: 135px;
-	height: 49px;
-	border-radius: 50px;
 	border: 1px solid white;
-	background: #ffffff;
+	width: 395px;
+	height: 51px;
 }
-/*=============================================
-MAPA
-=============================================*/
-#mapa{
-	position: relative;
-	margin: auto;
-	width: 1920px;
-	height: 603px;
+button{
+	border-radius: 50px;
+	border: 0px;
+	width: 123px;
+	height: 51px;
 }
 /*=============================================
 FOOTER
 =============================================*/
 footer{
-	position: relative;
-	margin: auto;
-	width: 1920px;
-	height: 396px;
+	min-height: 300px;
 	background: #ffffff;
 }
 footer article{
-	position: relative;
-	top: 65px;
-	left: 600px;
 	width: 705px;
 	height: 80px;
 	color: #b3b8c5;
@@ -321,14 +273,30 @@ PANTALLA DE ESCRITORIO LARGE (lg)
 	#slide header label{display: none;}
 	#section2{
 		padding-top: 100px;
-		padding-left: 300px;
+		padding-left: 200px;
 	}
-	/*section{
+	/*#fotos ul li:first-child{max-height: 641px;}
+	#fotos ul li:nth-child(2){
+		height: 100%;
+		min-height: 500px;
+		max-height: 641px;
+	}
+	#fotos ul li:nth-child(3){max-height: 641px;}
+	#fotos ul li:last-child{
+		height: 100%;
+		max-height: 641px;
+	}*/
+	#battom{
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-image: url(../img/bbom.png);}
+	#section2{
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-image: url(../img/bask.png);
-	}*/
+	}
 }
 /*=============================================
 PANTALLA DE ESCRITORIO MED (md)         
@@ -364,14 +332,14 @@ PANTALLA DE ESCRITORIO MED (md)
 	#slide header label{display: none;}
 	#section2{
 		padding-top: 100px;
-		padding-left: 300px;
+		padding-left: 100px;
 	}
-	/*section{
+	/*#fotos ul{padding: 20px;}*/
+	#battom{
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
-		background-image: url(../img/bask.png);
-	}*/
+		background-image: url(../img/bbom.png);}
 }	
 /*=============================================
 PANTALLA DE ESCRITORIO SMALL (sm)        
@@ -401,9 +369,14 @@ PANTALLA DE ESCRITORIO SMALL (sm)
 		z-index: 100;
 	}
 	#section2{
-		padding-top: 80px;
+		padding-top: 50px;
 		padding-left: 40px;
 	}
+	#battom{
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-image: url(../img/bbom.png);}
 }
 /*=============================================
 PANTALLA DE ESCRITORIO EXTRASMALL (xs)         
@@ -432,4 +405,9 @@ PANTALLA DE ESCRITORIO EXTRASMALL (xs)
 		background: rgba(155,0,0,.9);
 		z-index: 100;
 	}
+	#battom{
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-image: url(../img/bbom.png);}
 }
